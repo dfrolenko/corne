@@ -56,9 +56,9 @@
 
             display-name = "Lower";
             bindings = <
-&kp UP_ARROW    &kp F5           &kp N7        &kp N8         &kp N9  &kp F9       &kp F1   &kp F2             &kp F3             &kp F4         &kp F5   &kp F6
-&kp LEFT_ARROW  &kp RIGHT_ARROW  &kp N4        &kp N5         &kp N6  &kp F10      &trans   &kp RIGHT_CONTROL  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &trans   &kp GRAVE
-&kp DOWN_ARROW  &kp NUMBER_0     &kp NUMBER_1  &kp N2         &kp N3  &kp F11      &kp F7   &kp F8             &kp F9             &kp F10        &kp F11  &kp F12
+&kp UP_ARROW    &kp F5           &kp N7        &kp N8         &kp N9  &kp F9       &kp F1   &kp F2             &kp F3     &kp F4         &kp F5   &kp F6
+&kp LEFT_ARROW  &kp RIGHT_ARROW  &kp N4        &kp N5         &kp N6  &kp F10      &trans   &kp RIGHT_CONTROL  &kp RSHFT  &kp RIGHT_ALT  &trans   &kp GRAVE
+&kp DOWN_ARROW  &kp NUMBER_0     &kp NUMBER_1  &kp N2         &kp N3  &kp F11      &kp F7   &kp F8             &kp F9     &kp F10        &kp F11  &kp F12
                                                &new_behavior  &trans  &kp SPACE    &kp RET  &mo 3              &kp DEL
             >;
         };
