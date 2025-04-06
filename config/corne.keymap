@@ -33,7 +33,7 @@
 
         combo_change_lang {
             bindings = <&tog 3>;
-            key-positions = <12 24 12 24>;
+            key-positions = <12 24>;
         };
 
         combo_back_lang {
