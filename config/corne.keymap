@@ -32,13 +32,13 @@
         compatible = "zmk,combos";
 
         change_lang {
-            bindings = <&to 3>;
+            bindings = <&tog 3>;
             key-positions = <12 24>;
             layers = <0>;
         };
 
         back {
-            bindings = <&to 0>;
+            bindings = <&tog 0>;
             key-positions = <24 12>;
             layers = <3>;
         };
