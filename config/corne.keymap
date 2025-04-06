@@ -37,7 +37,7 @@
             layers = <0>;
         };
 
-        back {
+        back_lang {
             bindings = <&tog 0>;
             key-positions = <36 12>;
             layers = <3>;
