@@ -28,30 +28,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        combo_switch_rus {
-            bindings = <&to 1>;
-            key-positions = <36 38>;
-            layers = <0>;
-        };
-
-        combo_switch_eng {
-            bindings = <&to 0>;
-            key-positions = <36 38>;
-            layers = <1>;
-        };
-    };
-
-    macros {
-        new_macro: new_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none>;
-            label = "NEW_MACRO";
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -68,16 +45,7 @@
 &kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I             &kp O    &kp P     &kp BSPC
 &kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K             &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA         &kp DOT  &kp FSLH  &new_behavior6 PRINTSCREEN ESCAPE
-                         &alt_win  &mo 2  &kp SPACE    &kp RET  &mo 3  &kp LEFT_BRACKET
-            >;
-        };
-
-        layer_4 {
-            bindings = <
-&trans  &kp RA(Q)  &kp RC(LA(W))  &kp LC(LA(E))  &kp LC(R)  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp A      &kp S          &kp D          &kp F      &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans         &trans         &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
-                                  &kp LEFT_ALT   &mo 2      &kp SPACE    &trans  &mo 3   &trans
+                         &alt_win  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp LEFT_BRACKET
             >;
         };
 
@@ -93,7 +61,7 @@
 &kp UP_ARROW    &kp F5           &kp N7        &kp N8    &kp N9  &kp F9       &kp F1   &kp F2             &kp F3      &kp F4         &kp F5   &kp F6
 &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp N4        &kp N5    &kp N6  &kp F10      &trans   &kp RIGHT_CONTROL  &kp RSHFT   &kp RIGHT_ALT  &trans   &kp GRAVE
 &kp DOWN_ARROW  &kp NUMBER_0     &kp NUMBER_1  &kp N2    &kp N3  &kp F11      &kp F7   &kp F8             &kp F9      &kp F10        &kp F11  &kp F12
-                                               &alt_win  &trans  &kp SPACE    &kp RET  &mo 4              &kp DELETE
+                                               &alt_win  &trans  &kp SPACE    &kp RET  &mo 3              &kp DELETE
             >;
         };
 
@@ -109,7 +77,7 @@
 &kp TAB    &kp EXCL         &kp AT         &kp HASH        &kp DLLR   &kp PRCNT       &kp LESS_THAN  &kp GREATER_THAN  &kp LPAR    &kp RPAR  &kp TILDE  &kp AMPERSAND
 &kp LCTRL  &kp KP_MULTIPLY  &kp LEFT_ALT   &kp LEFT_SHIFT  &kp LCTRL  &kp QUESTION    &kp COLON      &kp SEMICOLON     &kp LBKT    &kp RBKT  &kp EQUAL  &kp SQT
 &kp LSHFT  &kp PIPE         &kp BACKSLASH  &kp SLASH       &kp MINUS  &kp PLUS        &kp COMMA      &kp DOT           &kp LBRC    &kp RBRC  &kp UNDER  &kp DOUBLE_QUOTES
-                                           &alt_win        &mo 4      &kp SPACE       &kp RET        &trans            &kp DELETE
+                                           &alt_win        &mo 3      &kp SPACE       &kp RET        &trans            &kp DELETE
             >;
         };
 
