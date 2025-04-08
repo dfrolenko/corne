@@ -28,7 +28,21 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        combo_switch_rus {
+            bindings = <&tog 4>;
+            key-positions = <36 38>;
+            layers = <0>;
+        };
+
+        combo_switch_eng {
+            bindings = <&tog 0>;
+            key-positions = <36 38>;
+            layers = <4>;
+        };
+    };
 
     macros {
         new_macro: new_macro {
@@ -96,6 +110,15 @@
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
 &trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
                                         &trans        &trans        &trans          &trans  &trans  &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &kp RA(Q)  &kp RC(LA(W))  &kp LC(LA(E))  &kp LC(R)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp A      &kp S          &kp D          &kp F      &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans         &trans         &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                  &trans         &trans     &trans    &trans  &trans  &trans
             >;
         };
     };
