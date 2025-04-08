@@ -38,7 +38,7 @@
         };
 
         combo_switch_eng {
-            bindings = <&to 1>;
+            bindings = <&to 0>;
             key-positions = <36 38>;
             layers = <1>;
         };
